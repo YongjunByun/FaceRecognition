@@ -34,6 +34,7 @@ void CameraWidget::updateImage() {
 void CameraWidget::GetFaceImage() {
     if (imageCount >= FACE_COUNT) {
         Eigenface_timer->stop();
+        Eigenfaces::computeEigenfaces(faces, 20);
         ShowFacesPopup();
         return;
     }
@@ -92,5 +93,5 @@ void CameraWidget::ShowFacesPopup() {
     layout->addWidget(label);
     dialog->setLayout(layout);
     dialog->setWindowTitle("Face Images");
-    dialog->exec(); // 모달 다이얼로그로 보여주기
+    dialog->exec(); //다이얼로그로 보여주기
 }

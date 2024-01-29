@@ -9,6 +9,7 @@
 #include <opencv2/opencv.hpp>
 
 #include "HaarCascade.h"
+#include "Eigenfaces.h"
 
 using namespace std;
 
@@ -37,4 +38,5 @@ private:
 private:
 	Ui::CameraWidgetClass ui;
 	HaarCascade m_HaarCascade;
+	//Eigenfaces m_Eigenfaces;
 };
