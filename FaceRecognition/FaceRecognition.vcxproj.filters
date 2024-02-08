@@ -49,6 +49,9 @@
     <ClCompile Include="HaarCascade.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="LoadDnnModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="CameraWidget.h">
@@ -67,5 +70,11 @@
     <ClInclude Include="Eigenfaces.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="LoadDnnModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>
